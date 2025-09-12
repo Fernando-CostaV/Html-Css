@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montando Caixas</title>
+    <style>
+        h1{
+            /*Box-level*/
+            width: 300px;
+            height: 50px;
+            background-color: lightgray;
+            border-width: 10px;
+            border-style: solid;
+            /*Shorthand: EX.. border: 10px solid color;
+            Ordem: Width Style e color*/
+
+            padding: 20px;
+            /*Shorthand: EX.. padding:10px 10px 10px 10px;
+            ou apenas um valor: padding: 10px; que ele vai aplicar em todos os lados
+            Ordem: top right bottom left
+            ou */
+
+            outline-width: 30px;
+            outline-style: solid;
+            outline-color: blue;
+            /*shorthand: outline: 30px solid blue;
+            Ordem: width style color */
+
+            margin: 50px;
+            /*Margin; podemos usar a função auto dos lados direito e esquerdo para ficar centralizado */
+        }
+        a{/*Inline-level*/
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding: 10px;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa</h1>
+    <p>Parágrafos tmabém são exemplos de caixas inline-level <a href="#"> vamos ver como isso tudo fuinciona</a></p>
+    
+</body>
+</html>

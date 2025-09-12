@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family:  Times, "New Roman", Times, serif;
+            /*
+            Medidas Absolutas
+            em, mn, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px Geralmente e = 1em
+
+            Recomendação da W3c e usar PX e EM
+            */
+            font-size: 1.5em ;
+            font-weight:lighter ;/*Colocar as fotnes em negritos e etc..*/
+            font-style: italic;/*Colocar a fonte em italico e etc..*/ 
+            text-decoration: underline;/*Colocar sublinhado entre outras coisas nas fontes*/
+
+            /*ligther, normal, bold, bolder*/
+
+        }
+        h1{
+            
+            /* Podemos utililizar uma Shorthand (uma mãozinha) que seria a tag Font, mas ela precisa ser seguida uma ordem que seria basicamente:
+
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            font-style ->font-weight -> font-size -> font-family, eficaria assim 
+            */
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+        }
+        h2{
+           /*usando uma Shorthand font nao precisamos colocar 
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic; 
+            no lugar disso usamos apenas a tag Font: , e seguimos a ordem*/
+            font: italic bolder 2em 'Times New Roman', Times, serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed possimus beatae maxime magni rerum nobis. Sapiente beatae maxime eos tempore optio dolorum iste corporis voluptas tempora, ex debitis architecto hic! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dolorum veniam cupiditate magnam doloribus harum alias sunt ducimus commodi ex sequi fugiat blanditiis, saepe molestias eos eligendi non dicta quisquam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos autem excepturi error, odit, enim temporibus dolore repellat dolores maiores explicabo tempore harum pariatur. Corporis atque, ratione ab quo maxime sed.</p>
+    <h2>Subtitulo do Ex</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius commodi reprehenderit ipsam vero pariatur! Debitis pariatur necessitatibus cumque quod, ducimus aliquam fugit, facilis quibusdam soluta expedita veniam, dolor nisi adipisci!</p>
+    
+</body>
+</html>
